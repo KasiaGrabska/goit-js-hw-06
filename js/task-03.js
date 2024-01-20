@@ -16,12 +16,14 @@ const images = [
 const ulGallery = document.querySelector(".gallery");
 
 const imgGallery = images
+  // metoda map iteruje po tablicy images
   .map(
     (image) =>
-      `<li class = "gallery item">
+      //szablon łańcuchowy tworzący element listy `<li></li>` z zagniedzdzonym znacznikiem `<img>`
+      `<li class = "gallery-item">
   <img src = "${image.url}" alt = "${image.alt}">
-</li>`
+</li>` //
   )
+  //łączy tablicę łańcuchów w jeden ciąg znaków ( układałyby się jeden pod drugim)
   .join("");
-
-ulGallery.insertAdjacentHTML("beforeend", imgGallery);
+ulGallery.insertAdjacentHTML("beforeend", imgGallery); //metoda dodaje je do istniejącego elementu galerii w drzewie DOM, zakładając istnienie elementu HTML o klasie "gallery".
