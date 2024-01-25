@@ -15,7 +15,7 @@ logForm.addEventListener("submit", (event) => {
     alert("All fields should be filled in!");
     return;
   }
-  //deklarujemy obiekt, którhy zawiera właściwości Login i Password, aby odwołać się do zmiennych email i password uzywamy słowa kluczowego this
+  //deklarujemy obiekt, którhy zawiera właściwości Login i Password, aby odwołać się do zmiennych email i password uzywamy zmiennych const login i const password
   const object = {
     Login: login,
     Password: password,
