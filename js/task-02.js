@@ -10,7 +10,7 @@ const ingredients = [
 const ulIng = document.querySelector("#ingredients");
 
 const liArray = ingredients.map((ingredient) => {
-  const li = document.createElement("li"); //<li></li>
+  const liItem = document.createElement("li"); //<li></li>
   listItem.textContent = ingredient; //<li>Potatoes</li>
   liItem.classList.add("item"); //<li class="item">Potatoes</li>
   return liItem;
